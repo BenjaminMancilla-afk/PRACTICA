@@ -1,0 +1,10 @@
+[
+    {
+        "id_empleado": 100000,
+        "nombre": "Benjamin",
+        "apellido": "Mancilla",
+        "edad": 23,
+        "id_cargo": "C2",
+        "sueldo_base": 1661249
+    }
+]

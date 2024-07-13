@@ -1,0 +1,60 @@
+Proceso BENJAMIN
+	Definir tarifa,sector,descuento,descuento2,monto Como Entero;
+	Definir result Como Real;
+	Escribir "----------------------------------";
+	Escribir "VEN A VER A TU ARTISTA FAVORITO";
+	
+	tarifa<-0;
+	descuento<-0;
+	
+	
+	Mientras tarifa <> 3 Hacer
+		Escribir "----------------------------------";
+		Escribir "LAS TARIFAS SON: ";
+		Escribir "----------------------------------";
+		Escribir "1. CLIENTE BANCO";
+		Escribir "2. PUBLICO GENERAL";
+		Escribir "3. SALIR DEL MENU";
+		Leer tarifa;
+		Limpiar Pantalla;
+		Segun tarifa Hacer
+			1:
+				Escribir "LOS SECTORES SON: ";
+				Escribir "1. CANCHA: $20.000";
+				Escribir "2. PLATEA BAJA: $15.000";
+				Escribir "3. PLATEA ALTA: $12.500";
+				Leer sector;
+				Limpiar Pantalla;
+				si sector = 1 Entonces
+					descuento=0;
+					mientras descuento <> 2 Hacer
+						Escribir "ELIGIO CANCHA SU VALOR ES DE $20.000";
+						Escribir "¿CUENTA CON ALGUN DESCUENTO?";
+						Escribir "1. SI";
+						Escribir "2. NO";
+						Leer descuento;
+						si descuento = 1 Entonces
+							escribir "¿CON QUE DESCUENTO CUENTA?";
+							Escribir "1. ESTUDIANTE: 10%";
+							Escribir "2. TERCERA EDAD: 30%";
+							Escribir "3. PAGO EN EFECTIVO: 5";
+							Leer descuento2;
+							si descuento2 = 1 Entonces
+								monto<-20000;
+								result=monto-(monto*0.1);
+								Escribir "SU TOTAL CON DESCUENTO ES:", result;
+							FinSi
+						FinSi
+						descuento=2;
+					FinMientras
+				FinSi
+				
+			2:
+				Escribir "LOS SECTORES SON: ";
+				Escribir "1. CANCHA: $22.000";
+				Escribir "2. PLATEA BAJA: $17.000";
+				Escribir "3. PLATEA ALTA: $14.300";
+				Leer sector;
+		FinSegun
+	FinMientras 
+FinProceso

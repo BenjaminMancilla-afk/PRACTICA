@@ -1,0 +1,42 @@
+[
+    {
+        "modelo": "rio",
+        "precio": 11100000
+    },
+    {
+        "modelo": "forte",
+        "precio": 11000000
+    },
+    {
+        "modelo": "optima",
+        "precio": 10800000
+    },
+    {
+        "modelo": "stinger",
+        "precio": 10500000
+    },
+    {
+        "modelo": "soul",
+        "precio": 9500000
+    },
+    {
+        "modelo": "seltos",
+        "precio": 9200000
+    },
+    {
+        "modelo": "sportage",
+        "precio": 11100000
+    },
+    {
+        "modelo": "sorento",
+        "precio": 9600000
+    },
+    {
+        "modelo": "felluride",
+        "precio": 10400000
+    },
+    {
+        "modelo": "carnival",
+        "precio": 9400000
+    }
+]

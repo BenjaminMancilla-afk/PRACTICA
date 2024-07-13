@@ -1,0 +1,34 @@
+[
+    {
+        "destino": "París",
+        "precio": 62800
+    },
+    {
+        "destino": "Londres",
+        "precio": 3100
+    },
+    {
+        "destino": "Nueva York",
+        "precio": 57600
+    },
+    {
+        "destino": "Tokio",
+        "precio": 39300
+    },
+    {
+        "destino": "Sídney",
+        "precio": 41800
+    },
+    {
+        "destino": "Roma",
+        "precio": 91900
+    },
+    {
+        "destino": "Berlín",
+        "precio": 46500
+    },
+    {
+        "destino": "Barcelona",
+        "precio": 26800
+    }
+]

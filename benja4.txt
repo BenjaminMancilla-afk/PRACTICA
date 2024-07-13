@@ -1,0 +1,133 @@
+Proceso Ejercicio2
+	Definir tipocliente,tiposector,tipodescuento,montoinicial, montofinal,descuento Como Entero;
+	Definir tarifa,sector Como Caracter;
+	
+	montoinicial<-0;
+	tipocliente<-0;
+	
+	Mientras tipocliente <> 3 Hacer
+		Escribir "-----------------------------";
+		Escribir "SELECCIONE EL TIPO DE CLIENTE";
+		Escribir "-----------------------------";
+		Escribir "1. CLIENTE BANCO";
+		Escribir "2. CLIENTE NORMAL";
+		Escribir "3. SALIR DEL MENU";
+		Leer tipocliente;
+		Limpiar Pantalla;
+		
+		Segun tipocliente Hacer
+			1:
+				tarifa<-"CLIENTE BANCO";
+				
+				Escribir "-----------------------------";
+				Escribir "SELECCIONE EL SECTOR";
+				Escribir "-----------------------------";
+				Escribir "1. CANCHA      ($20.000)";
+				Escribir "2. PLATEA BAJA ($15000)";
+				Escribir "3. PLATEA ALTA ($12500)";
+				Escribir "4. SALIR";
+				Leer tiposector;
+				Limpiar Pantalla;
+				
+				Segun tiposector Hacer
+					1:
+						montoinicial<-20000;
+						sector<-"CANCHA";
+					2:
+						montoinicial<-15000;
+						sector<-"PLATEA BAJA";
+					3:
+						montoinicial<-12500;
+						sector<-"PLATEA ALTA";
+					De Otro Modo:
+						tiposector<-4;
+				FinSegun
+			2:
+				tarifa<-"CLIENTE NORMAL";
+				Escribir "-----------------------------";
+				Escribir "SELECCIONE EL SECTOR";
+				Escribir "-----------------------------";
+				Escribir "1. CANCHA      ($22.000)";
+				Escribir "2. PLATEA BAJA ($17000)";
+				Escribir "3. PLATEA ALTA ($14300)";
+				Escribir "4. SALIR";
+				Leer tiposector;
+				Limpiar Pantalla;
+				
+				Segun tiposector Hacer
+					1:
+						montoinicial<-22000;
+						sector<-"CANCHA";
+					2:
+						montoinicial<-17000;
+						sector<-"PLATEA BAJA";
+					3:
+						montoinicial<-14300;
+						sector<-"PLATEA ALTA";
+					De Otro Modo:
+						tiposector<-4;
+				FinSegun
+		FinSegun
+		
+		si montoinicial > 0 Entonces
+			tipodescuento<-0;
+			Mientras tipodescuento <= 0 o tipodescuento >= 3 Hacer;
+				Escribir "SELECCIONE DESCUENTO";
+				Escribir "1. ESTUDIANTE    10%";
+				Escribir "2. TERCERA EDAD  30%";
+				Escribir "3. EFECTIVO      5%";
+				Escribir "4. NINGUNO";
+				Leer tipodescuento;
+			FinMientras
+			
+			
+			Segun tipodescuento Hacer
+				1:
+					montofinal=montoinicial-(montoinicial*0.1);
+					descuento<-(montoinicial*0.1);
+					Escribir "-----------------------------";
+					Escribir "RESUMEN COMPRA";
+					Escribir "-----------------------------";
+					Escribir "TARIFA: ", tarifa;
+					Escribir "SECTOR: ", sector;
+					Escribir "SUBTOTAL: $ ", montoinicial;
+					Escribir "TIPO DESCUENTO: ESTUDIANTE";
+					Escribir "DESCUENTO: $ ", descuento;
+					Escribir "-----------------------------";
+					Escribir "TOTAL A PAGAR: $ ",montofinal;
+					Escribir "---GRACIAS POR SU COMPRA---";
+					Esperar Tecla;
+				2:
+					montofinal=montoinicial-(montoinicial*0.3);
+					descuento<-(montoinicial*0.3);
+					Escribir "-----------------------------";
+					Escribir "RESUMEN COMPRA";
+					Escribir "-----------------------------";
+					Escribir "TARIFA: ", tarifa;
+					Escribir "SECTOR: ", sector;
+					Escribir "SUBTOTAL: $ ", montoinicial;
+					Escribir "TIPO DESCUENTO: ESTUDIANTE";
+					Escribir "DESCUENTO: $ ", descuento;
+					Escribir "-----------------------------";
+					Escribir "TOTAL A PAGAR: $ ",montofinal;
+					Escribir "---GRACIAS POR SU COMPRA---";
+					Esperar Tecla;
+				3:
+					montofinal=montoinicial-(montoinicial*0.05);
+					descuento<-(montoinicial*0.05);
+					Escribir "-----------------------------";
+					Escribir "RESUMEN COMPRA";
+					Escribir "-----------------------------";
+					Escribir "TARIFA: ", tarifa;
+					Escribir "SECTOR: ", sector;
+					Escribir "SUBTOTAL: $ ", montoinicial;
+					Escribir "TIPO DESCUENTO: ESTUDIANTE";
+					Escribir "DESCUENTO: $ ", descuento;
+					Escribir "-----------------------------";
+					Escribir "TOTAL A PAGAR: $ ",montofinal;
+					Escribir "---GRACIAS POR SU COMPRA---";
+					Esperar Tecla;
+			FinSegun
+		FinSi
+	FinMientras
+FinProceso
